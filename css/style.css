@@ -37,7 +37,18 @@
 
 #welcome-section {
     background-color: rgb(61, 142, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.welcome-text{
+    margin: auto;
+    width: 100%;
+    font-size: 2.3rem;
+}
+
 
 #projects {
     background-color: rgb(255, 0, 140);
