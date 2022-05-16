@@ -7,11 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.main {
-    position: relative;
-}
-
-.header {
+#navbar {
     position: fixed;
     background-color: crimson;
     height: 10vh;
@@ -52,4 +48,41 @@
 
 #projects {
     background-color: rgb(255, 0, 140);
+    height: max-content;
+    display: grid;
+}
+
+.section-heading {
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.project-tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: 100%;
+    margin: 4rem auto;
+    gap: 1rem;
+}
+
+.projects-tile--proj {
+    display: flex;
+    width: 20rem;
+    height: 22rem;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 375px){
+    #projects {
+        background-color: cornsilk !important;
+    }    
 }
